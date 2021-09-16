@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <title>
+            third continuation
+        </title>
+    </head>
+    <body>
+         <p>{% if router!=None and "veera" in router %}</p>  
+         <hr></hr>
+         <p>{{variable_veera_order}}</p>
+         <p><h5>{{strveera}}</h5></p>
+         <p>{{variable_veera_intro1}}</p>
+         <p>{{variable_veera_intro2}}</p>
+         <p>{{variable_veera_dicker}}</p>
+         <p>{{variable_veera_last}}</p>
+         <p>{% endif %}</p>
+         <p>{% if router!=None and  "bhayanka" in router %}</p>  
+         <hr></hr> 
+         <p>{{variable_bhayanka_order}}</p>
+         <p><h5>{{strbhayanka}}</h5></p>
+         <p>{{variable_bhayanka_intro1}}</p>
+         <p>{{variable_bhayanka_intro2}}</p>
+         <p>{{variable_bhayanka_dicker}}</p>
+         <p>{{variable_bhayanka_last}}</p>
+         <p>{% endif %}</p>
+         <p>{% if router!=None and  "hasya" in router %}</p>  
+         <hr></hr>
+         <p>{{variable_hasya_order}}</p>
+         <p><h5>{{strhasya}}</h5></p>
+         <p>{{variable_hasya_intro1}}</p>
+         <p>{{variable_hasya_intro2}}</p>
+         <p>{{variable_hasya_dickers}}</p>
+         <p>{{variable_hasya_last}}</p>
+         <p>{% endif %}</p>
+         <p>{% if router!=None and  "karuna" in router %}</p>   
+         <hr></hr>
+         <p>{{variable_karuna_order}}</p>
+         <p><h5>{{strkaruna}}</h5></p>
+         <p>{{variable_karuna_intro1}}</p>
+         <p>{{variable_karuna_intro2}}</p>
+         <p>{{variable_karuna_dicker}}</p>
+         <p>{{variable_karuna_last}}</p>
+         <p>{% endif %}</p>
+         <p>{% if router!=None and  "adbutha" in router %}</p>  >  
+         <hr></hr>
+         <p>{{variable_adbutha_order}}</p>
+         <p><h5>{{stradbutha}}</h5></p>
+         <p>{{variable_adbutha_intro1}}</p>
+         <p>{{variable_adbutha_intro2}}</p>
+         <p>{{variable_adbutha_dicker}}</p>
+         <p>{{variable_adbutha_last}}</p>
+         <p>{% endif %}</p>
+         <p>{% if router!=None and  "shantha" in router %}</p>  
+         <hr></hr>
+         <p>{{variable_shantha_order}}</p>
+         <p><h5>{{strshantha}}</h5></p>
+         <p>{{variable_shantha_intro1}}</p>
+         <p>{{variable_shantha_intro2}}</p>
+         <p>{{variable_shantha_dicker}}</p>
+         <p>{{variable_shantha_last}}</p>
+         <p>{% endif %}</p>
+         <p>{% if router!=None and  "bibhatsya" in router %}</p>   
+         <hr></hr>
+         <p>{{variable_bibhatsya_order}}</p>
+         <p><h5>{{strbibhatsya}}</h5></p>
+         <p>{{variable_bibhatsya_intro1}}</p>
+         <p>{{variable_bibhatsya_intro2}}</p>
+         <p>{{variable_bibhatsya_dicker}}</p>
+         <p>{{variable_bibhatsya_last}}</p>
+         <p>{% endif %}</p>   
+         <p>{% if router!=None and "shringara" in router %}</p>
+         <hr></hr>
+         <p>{{variable_shringara_order}}</p>
+         <p><h5>{{strshringara}}</h5></p>
+         <p>{{variable_shringara_intro1}}</p>
+         <p>{{variable_shringara_intro2}}</p>    
+         {% for i,p in dicshringara.items() %}
+         <p>
+            {% for j in lst_shringara_relations %}
+            {% if i==j %}
+            story about {{ i }}:
+         </p>
+         <p>
+            {{p}}
+         </p>
+         {% endif %}
+         {% endfor %}
+         {% endfor %}  
+        <p>all is well</p>
+         <p>{{variable_shringara_last}}</p>
+         <p>{% endif %}</p> 
+         <p>{% if router!=None and "raudra" in router %}</p>
+         <hr></hr>
+         <p>{{variable_raudra_order}}</p>
+         <p><h5>{{strraudra}}</h5></p>
+         <p>{{variable_raudra_intro1}}</p>
+         <p>{{variable_raudra_intro2}}</p>
+         {{ lst_raudra_relations }}    
+         {% for i,p in dicraudra.items() %}
+         <p>
+            {% for j in lst_raudra_relations %}
+            {% if i==j %}
+            story about {{ i }}:
+         </p>
+         <p>
+            {{p}}
+         </p>
+         {% endif %}
+         {% endfor %}
+         {% endfor %}  
+        <p>all is welllllllllinall</p>
+         <p>{{variable_raudra_last}}</p>
+         <p>{{ variable_raudra_alliswell}}</p>
+         <p>{% endif %}</p>
+         <form>
+            <button formaction="/">edit the text</button>
+        </form> 
+        </body>
+</html>

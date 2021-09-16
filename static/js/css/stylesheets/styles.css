@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400");
+@import url("https://fonts.googleapis.com/css?family=Metal Mania");
+@import url("https://allfont.net/allfont.css?fonts=comic-sans-ms");
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Merienda+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Commissioner', sans-serif;
+    color:#777
+}
+
+html, body{
+    margin:0;
+    padding : 0;
+}
+
+.nav ul{
+    margin:0;
+}
+
+.nav a{
+    display:inline-block;
+    padding: 1em;
+    color:whitesmoke;
+    text-decoration: none;
+    font-family: "Merienda One";
+    border-radius: 8px;
+}
+
+.main-nav{
+    text-align:center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255,255,255,.3) ;
+}
+
+.nav li{
+    display: inline;
+    font-size: 1.1em;
+}
+
+.main-nav li{
+    padding:0 5%;
+}
+.nav a:hover{
+    background-color: rgba(169, 169, 169, 0.788);
+}
+.main-header{ 
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-image: url("images/scenry2.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 40px;
+    background-color: rgb(0,0,.3);
+ } 
+.navarasa{
+    text-align: center; 
+    margin: 0;
+    font-family: "Merienda One" ;
+    font-weight: lighter;
+    color:white;
+}
+
+.navarasa-large  {
+            font-size: 5em;
+}
+
+.content-section{
+    margin:1em;
+}
+
+.container{
+    max-width: 900px;
+    margin:0 auto;
+    padding:0 1.5em;
+}
+
+.section-header{
+    font-family:"Lobster";
+    font-weight: normal;
+    color:rgb(0, 0, 0) ;
+    text-align: center;
+    font-size: 2.5em;
+    letter-spacing:1px;
+}
+
+.about-group{
+    left:10px;
+    top:20px;
+    height:200px;
+    width:200px;
+    margin:15px;
+    border-radius:50%;
+}
+.about-group1{
+    height:200px;
+    width:200px;
+    margin:15px;
+    border-radius:50%;
+    right: 10px;
+}
+.about-group2{
+    float:none;
+    height:230px;
+    width:220px;
+    margin:15px;
+    border-radius:50%;
+}
+
+.footer{
+    background-color: lightpink;
+    text-align: center;
+    color:deeppink;
+    font-family: "Metal Mania";
+    padding: 1em;
+}
+
+#show{
+    background-position: center center;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: animate 60s linear infinite;
+    animation-timing-function: ease-in-out;
+    background-image: url("images/vic(1).jpg");
+    background-size: cover;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+@keyframes animate{
+    0%{
+        background-image: url("images/vic(1).jpg");
+    }
+    10%{
+        background-image: url("images/vic(2).jpg");
+    }
+    20%{
+        background-image: url("images/vic(3).jpg");
+    }
+    30%{
+        background-image: url("images/vic(4).jpg");
+    }
+    40%{
+        background-image: url("images/vic(5).jpg");
+    }
+    50%{
+        background-image: url("images/vic(6).jpg");
+    }
+    60%{
+        background-image: url("images/vic(7).jpg");
+    }
+    70%{
+        background-image: url("images/vic(8).jpg");
+    }
+    80%{
+        background-image: url("images/vic(9).jpeg");
+    }
+    90%{
+        background-image: url("images/vic(10).jpg");
+    }
+    100%{
+        background-image: url("images/vic(11).jpg");
+    }
+}
+
+.colour{
+    background-color: transparent;
+    padding: 20px;
+    margin: 15px;
+    margin-right: 910px;
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;
+    color: antiquewhite;
+    font-family: "Merienda One";
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+
+.colour:hover{
+    background-color: rgb(49, 88, 194);
+}
+
+.colour1{
+    background-color:transparent ;
+    padding: 20px;
+    margin: 15px;
+    margin-right: 15px;
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;
+    color: antiquewhite;
+    font-family: "Merienda One";
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+
+.colour1:hover{
+    background-color: rgb(49, 88, 194);
+}
+
+.behind{
+    background-color: transparent;
+    color: rgb(246, 246, 246);
+    font-size: 32px;
+    font-family: "Lobster";
+    font-weight: normal;
+    letter-spacing: .03em;
+}
+
+.section-header1{
+    font-family:"Lobster";
+    font-weight: normal;
+    color:rgb(255, 245, 245) ;
+    text-align: center;
+    font-size: 1.7em;
+}
+
+.val li{
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    font-family: "Lobster";
+    font-weight: normal;
+    list-style-type: none;
+    animation: animate5 10s linear infinite;
+    animation-timing-function: ease-in-out;
+    text-decoration: none;
+}
+
+.val a{
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    font-family: "Lobster";
+    font-weight: normal;
+    list-style-type: none;
+    animation: animate5 10s linear infinite;
+    animation-timing-function: ease-in-out;
+    text-decoration: none;
+}
+
+@keyframes animate5 {
+    0%{
+        color: black;
+    }
+    50%{
+        color: rgb(255, 255, 255);
+    }
+    100%{
+        color: black;
+    }
+}
+
+.work{
+    color: white;
+    font-size: 30px;
+    font-family: "Rancho" ;
+    font-weight: bolder;
+    text-align:left;
+}
+.work1{
+    color: white;
+    font-size: 30px;
+    font-family: "Rancho" ;
+    font-weight: bolder;
+    text-align: right;
+}
+.work2{
+    color: white;
+    font-size: 30px;
+    font-family: "Rancho" ;
+    font-weight: bolder;
+    text-align: center;
+}
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>shringara and raudra</title>
+</head>
+<body>
+    shringara and raudra
+    <p>
+        <p>----------------------------------------------------------------------shringara</p> 
+        <p>{{ variable_shringara_intro1 }}</p>
+        <p>{{ variable_shringara_intro2 }}</p>    
+        {% for i,p in dicshringara.items() %}
+        <p>
+           {% for j in inpo2 %}
+           {% if i==j %}
+           story about {{j}} :
+        </p>
+        <p>
+           {{p}}
+        </p>
+        {% endif %}
+        {% endfor %}
+        {% endfor %}  
+    <p>all is well</p>
+    <p>----------------------------------------------------------------------raudra</p>
+    <p>
+        {% for i,p in dicraudra.items() %}
+        <p>
+           {% for j in inpo %}
+           {% if i==j %}
+           story about {{j}} :
+        </p>
+        <p>
+           {{p}}
+        </p>
+        {% endif %}
+        {% endfor %}
+        {% endfor %} 
+        <p>all is well</p>
+    <form>
+        <button formaction="/">edit the text</button>
+    </form>       
+</body>
+</html>

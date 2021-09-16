@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>
+            real page
+        </title>
+    </head>
+    <body>
+        <header>
+            <h2>#project navarasa</h2>
+                <h3>
+                               <b>the text given by you:</b>
+                </h3>
+        <p>
+            <b>{{areagiven}}</b>
+        </p>
+         </header>
+         <p>
+            #project navarasa
+         </p>
+         <hr></hr>
+         <ul>
+             <li>{{variable1}}</li>
+             <li>{{variable2}}</li>
+             <li>{{variable3}}</li>
+             <li>{{variable4}}</li>
+             <li>{{variable5}}</li>
+         </ul>
+         <p>
+             {% for i in variable6 %}
+             <p>{{ i }}</p>
+             {% endfor %}
+         </p>
+         <p>
+            {{variable7}}
+         </p>
+         <p>{% for i in variable8 %}</p>
+         <p>{{i}}</p>
+         <p>{% endfor %}</p>
+         <article>
+            <form name="hari prasath" method="POST">
+                <p>do you want to know about any navarasa:</p>
+                <label>yes
+                    <input type="radio" name="choose1" value="yes" required/>
+                </label> 
+                <label>no  
+                    <input type="radio" name="choose1" value="no"/>
+                </label> 
+                <div>
+                    <button type="submit" formaction="/choosers1">submit</button>
+                    <button type="reset">reset</button>
+                </div>
+            </form>
+         </article>
+         <p>
+             {% if variable9==True%}
+             <p>
+                <form name="hari" method="POST">
+                    <label>type that navarasa correctly:</label>
+                    <div>
+                    <input type="text" required name="chosen" />
+                    </div>
+                    <div>
+                    <button type="submit" formaction="/choosers2" required>submit</button>
+                    </div>
+                    </form>
+             </p>
+             {% elif variable9==False %}
+             <p>no problem</p>
+             {% endif %}
+         <p>{{variable10}}</p>
+         <label>hope everything got cleared,i about to read your text!</label>
+         <form name="reader" target="_blank" method="POST">
+             <label>can i?</label>
+             <div><label>yes</label><input name="choose2" type="radio" value="yes" required/>
+             </div>
+             <div><label>no</label><input name="choose2" type="radio" value="no"/>
+             </div>   
+             <button type="submit" value="submit" formaction="/choosers3">submit</button>
+            </form>
+         <p>{{ router }}</p> 
+         <form>
+            <button formaction="/">edit the text</button>
+        </form> 
+        </body>
+</html>

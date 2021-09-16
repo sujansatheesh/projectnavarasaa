@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@500&display=swap');
+.image{
+    background: url("Galaxy(4).jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.main{
+    color: cornsilk;
+    font-size: 24px;
+    font-family: "Kaisei Tokumin";
+}
+
+.colour{
+    background-color: rgb(161, 228, 184);
+    padding: 20px;
+    margin: 15px;
+    margin-right: 910px;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.colour1{
+    background-color:rgb(161, 228, 184) ;
+    padding: 20px;
+    margin: 15px;
+    margin-right: 15px;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.behind{
+    background-color: transparent;
+    color: rgb(243, 214, 87);
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <title>Navarasa</title>
+        <link rel="stylesheet" href="static\js\css\stylesheets\styles.css">
+    </head>
+     <body id="show">
+         <h3>{{ local_time }}</h3>
+         <header class="main-header">
+                <nav class="nav main-nav">
+                    <ul>
+                        <li><form><label>HOME</label><button formaction="/home page_open"></button></form></li>
+                        <li><form><label>ABOUT US</label><button formaction="/about us_open"></button></form></li>
+                        <li><form><label>CREDITS</label><button formaction="/credits_open"></button></form></li>
+                        <li><form><label>HISTORY</label><button formaction="/show history"></button></form></li>
+                    </ul>
+                </nav>
+                <h3 class="navarasa navarasa-large"> #PROJECT NAVARASA</h3>               
+            </header>
+            <section class="section-header">
+                <h3 class="section-header">Know You Through Me</h3>
+                <center>
+                   <article>
+                           <form  name="hari prasath" method="POST">
+                               <label>
+                                   <textarea class="behind" name="area" cols="100" rows="30" placeholder="WRITE HERE!"></textarea>
+                               </label>
+                               <div>
+                                <span><button  formaction="/need"class="colour" type="submit">SUBMIT</button></span>
+                                <span><button class="colour1" type="reset">RESET</button></span>                   
+                               </div>   
+                           </form>
+                   </article>
+                </center>
+            </section>
+        </body> 
+</html>
+ 

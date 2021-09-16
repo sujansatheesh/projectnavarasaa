@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all_third</title>
+</head>
+<body>
+    {{ no_rel_inpo }}
+    <p>
+    {{ router }}
+    </p>
+    {% if val_shringara==True %}
+    <p>    {{ strshringara }}
+        <p>
+            <p>----------------------------------------------------------------------shringara</p> 
+            <p>{{ variable_shringara_intro1 }}</p>
+            <p>{{ variable_shringara_intro2 }}</p>    
+            {% for i,p in dicshringara.items() %}
+            <p>
+               {% for j in no_rel_inpo %}
+               {% if i==j %}
+               story about {{ i }}:
+            </p>
+            <p>
+               {{p}}
+            </p>
+            {% endif %}
+            {% endfor %}
+            {% endfor %}  
+        <p>all is well</p></p>
+    {% endif %}    
+    <p></p>
+    {{ no_rel_inpo2 }}
+    <p>
+    {{ router }}
+    </p>
+    {% if val_raudra==True %}
+    <p>    {{ strraudra }}
+        <p>
+            <p>----------------------------------------------------------------------raudra</p> 
+            <p>{{ variable_raudra_intro1 }}</p>
+            <p>{{ variable_raudra_intro2 }}</p>    
+            {% for i,p in dicraudra.items() %}
+            <p>
+               {% for j in no_rel_inpo2 %}
+               {% if i==j %}
+               story about {{ i }}:
+            </p>
+            <p>
+               {{p}}
+            </p>
+            {% endif %}
+            {% endfor %}
+            {% endfor %}  
+        <p>all is well</p></p>
+    {% endif %}    
+    <p>{% if router!=None and "veera" in router %}</p>  
+    <hr></hr>
+    <p>{{variable_veera_order}}</p>
+    <p><h5>{{strveera}}</h5></p>
+    <p>{{variable_veera_intro1}}</p>
+    <p>{{variable_veera_intro2}}</p>
+    <p>{{variable_veera_dicker}}</p>
+    <p>{{variable_veera_last}}</p>
+    <p>{% endif %}</p>
+    <p>{% if router!=None and  "bhayanka" in router %}</p>  
+    <hr></hr> 
+    <p>{{variable_bhayanka_order}}</p>
+    <p><h5>{{strbhayanka}}</h5></p>
+    <p>{{variable_bhayanka_intro1}}</p>
+    <p>{{variable_bhayanka_intro2}}</p>
+    <p>{{variable_bhayanka_dicker}}</p>
+    <p>{{variable_bhayanka_last}}</p>
+    <p>{% endif %}</p>
+    <p>{% if router!=None and  "hasya" in router %}</p>  
+    <hr></hr>
+    <p>{{variable_hasya_order}}</p>
+    <p><h5>{{strhasya}}</h5></p>
+    <p>{{variable_hasya_intro1}}</p>
+    <p>{{variable_hasya_intro2}}</p>
+    <p>{{variable_hasya_dickers}}</p>
+    <p>{{variable_hasya_last}}</p>
+    <p>{% endif %}</p>
+    <p>{% if router!=None and  "karuna" in router %}</p>   
+    <hr></hr>
+    <p>{{variable_karuna_order}}</p>
+    <p><h5>{{strkaruna}}</h5></p>
+    <p>{{variable_karuna_intro1}}</p>
+    <p>{{variable_karuna_intro2}}</p>
+    <p>{{variable_karuna_dicker}}</p>
+    <p>{{variable_karuna_last}}</p>
+    <p>{% endif %}</p>
+    <p>{% if router!=None and  "adbutha" in router %}</p>  >  
+    <hr></hr>
+    <p>{{variable_adbutha_order}}</p>
+    <p><h5>{{stradbutha}}</h5></p>
+    <p>{{variable_adbutha_intro1}}</p>
+    <p>{{variable_adbutha_intro2}}</p>
+    <p>{{variable_adbutha_dicker}}</p>
+    <p>{{variable_adbutha_last}}</p>
+    <p>{% endif %}</p>
+    <p>{% if router!=None and  "shantha" in router %}</p>  
+    <hr></hr>
+    <p>{{variable_shantha_order}}</p>
+    <p><h5>{{strshantha}}</h5></p>
+    <p>{{variable_shantha_intro1}}</p>
+    <p>{{variable_shantha_intro2}}</p>
+    <p>{{variable_shantha_dicker}}</p>
+    <p>{{variable_shantha_last}}</p>
+    <p>{% endif %}</p>
+    <p>{% if router!=None and  "bibhatsya" in router %}</p>   
+    <hr></hr>
+    <p>{{variable_bibhatsya_order}}</p>
+    <p><h5>{{strbibhatsya}}</h5></p>
+    <p>{{variable_bibhatsya_intro1}}</p>
+    <p>{{variable_bibhatsya_intro2}}</p>
+    <p>{{variable_bibhatsya_dicker}}</p>
+    <p>{{variable_bibhatsya_last}}</p>
+    <p>{% endif %}</p>    
+    <hr></hr>
+    <form>
+        <button formaction="/">edit the text</button>
+    </form> 
+</body>
+</html>
